@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #000099, #000033);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -17%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 30px;
+    width: 35%;
+    color: white;
+}
+
+fieldset{
+    border: 1px solid #1e90ff;
+    border-radius: 15px;
+}
+
+.inputBox{
+    position: relative;
+    width: 100%;
+}
+
+#submit{
+    background-image: linear-gradient(to right,#003380, #600080);
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right,#091e3d, #31073d);
+}

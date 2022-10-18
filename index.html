@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro | Cliente </title>
+</head>
+<body>
+    <h1>Cadastro Geral | Pessoa Física</h1>
+    <div class="content">
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="inputBox">
+                        <label for="cpf">CPF:</label>
+                        <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+                        <p id="para">(Somente números)</p>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="data_nasc">Data de Nascimento:</label>
+                        <input type="date" name="data_nasc" id="data_nasc" required>
+                    </div>
+                    <br>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <div class="inputBox">
+                        <label for="cep">CEP:</label>
+                        <input type="number" name="cep" id="cep" required>
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="logra">Rua / Avenida:</label>
+                        <input type="text" name="logra" id="logra" required> 
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="num">Número:</label>
+                        <input type="number" name="num" id="num" required> 
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro" required> 
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" name="complemento" id="complemento"> 
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="municipio">Município:</label>
+                        <input type="text" name="complemento" id="complemento" required> 
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="uf">UF:</label>
+                        <input list="uf_id" name="uf" id="uf" required>
+                        <datalist id="uf_id">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </datalist>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div class="inputBox">
+                        <label for="telefone">Telefone fixo:</label>
+                        <input type="number" name="telefone" id="telefone">
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="cll">Celular:</label>
+                        <input type="number" name="cll" id="cll">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Autenticação</legend>
+                    <div class="inputBox">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="confir_email">Confirmação do Email:</label>
+                        <input type="email" name="confir_email" id="confir_email">
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha">
+                    </div>
+                    <br>
+                    <div class="inputBox">
+                        <label for="confir_senha">Confirmação da senha:</label>
+                        <input type="password" name="confir_senha" id="confir_senha">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Interesses</legend>
+                    <div class="inputBox">
+                        <label for="esportes">Esportes:</label>
+                        <br><br>
+                        <input type="checkbox" name="natacao">
+                        <label for="natacao">Natação</label>
+                        <br>
+                        <input type="checkbox" name="ginastica">
+                        <label for="ginastica">Ginástica</label>
+                        <br>
+                        <input type="checkbox" name="futebol">
+                        <label for="futebol">Futebol</label>
+                        <br>
+                        <input type="checkbox" name="corrida">
+                        <label for="corrida">Corrida</label>
+                        <br>
+                    </div>
+                    <div class="inputBox">
+                        <label for="linguagem">O que deseja aprender?</label>
+                        <br><br>
+                        <input type="checkbox" name="html">
+                        <label for="html">HTML</label>
+                        <br>
+                        <input type="checkbox" name="css">
+                        <label for="css">CSS</label>
+                        <br>
+                        <input type="checkbox" name="js">
+                        <label for="js">JS</label>
+                        <br>
+                        <input type="checkbox" name="php">
+                        <label for="php">PHP</label>
+                        <br>
+                    </div>
+                    <div class="inputBox">
+                        <label for="ciencia">Como tomou ciência do curso?</label>
+                        <br><br>
+                        <input type="checkbox" name="radio">
+                        <label for="radio">Rádio</label>
+                        <br>
+                        <input type="checkbox" name="jornal_virtual">
+                        <label for="jornal_virtual">Jornal Virtual</label>
+                        <br>
+                        <input type="checkbox" name="tv">
+                        <label for="tv">TV</label>
+                        <br>
+                        <input type="checkbox" name="email">
+                        <label for="email">Email</label>
+                        <br>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <br>
+        <input type="submit" name="" id="submit">
+    </div>
+</body>
+</html>
